@@ -1,0 +1,124 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <title>Attendance-2024</title>
+    <link rel="stylesheet" href="try.css">
+</head>
+<body>
+    <div class="container">
+        <p>Scan the QR code</p>
+        <div id="qrcode"></div>
+    </div>
+    
+    <script>
+        // Function to generate QR code with a given text
+        function generateQRCode(text) {
+            var qrcode = new QRCode(document.getElementById("qrcode"), {
+                text: text,
+                width: 128,
+                height: 128
+            });
+        }
+        
+        // Function to reload the page after 5 seconds
+        function reloadPage() {
+            setTimeout(function() {
+                location.reload();
+            }, 5000); // 5000 milliseconds = 5 seconds
+        }
+
+        // Function to disable the QR code
+        function disableQRCode() {
+            document.getElementById("qrcode").innerHTML = "<p>Form Submitted. QR code disabled.</p>";
+        }
+
+        // Generate a random parameter to make the link unique
+        var randomParam = Math.random().toString(36).substring(7);
+        var qrUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdJTprPw9YmNHIXA6UaiyHk91tlVO77kxKd03-18dlVorYDuQ/viewform" + "?param=" + randomParam;
+        generateQRCode(qrUrl);
+        document.getElementById("qrcode").style.border = "solid #000000";
+
+        // Call reloadPage function to reload the page after generating the QR code
+        reloadPage();
+
+        // Simulate form submission (replace this with your actual form submission logic)
+        function simulateFormSubmission() {
+            // Simulate form submission here
+            // For demonstration purposes, we'll just call disableQRCode after 3 seconds
+            setTimeout(disableQRCode, 3000); // Disable QR code after 3 seconds (replace this with your actual submission logic)
+        }
+
+        // Simulate form submission after 5 seconds (replace this with your actual form submission trigger)
+        setTimeout(simulateFormSubmission, 5000); // Simulate form submission after 5 seconds
+    </script>
+</body>
+</html>-->
+<!--to disable-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <title>Attendance-2024</title>
+    <link rel="stylesheet" href="try.css">
+</head>
+<body>
+    <div class="container">
+        <p>Scan the QR code</p>
+        <div id="qrcode"></div>
+    </div>
+    
+    <script>
+        // Function to generate QR code with a given text
+        function generateQRCode(text) {
+            var qrcode = new QRCode(document.getElementById("qrcode"), {
+                text: text,
+                width: 128,
+                height: 128
+            });
+        }
+        
+        // Function to reload the page after 5 seconds
+        function reloadPage() {
+            setTimeout(function() {
+                location.reload();
+            }, 5000); // 5000 milliseconds = 5 seconds
+        }
+
+        // Function to disable the QR code
+        function disableQRCode() {
+            document.getElementById("qrcode").innerHTML = "<p>Form Submitted. QR code disabled.</p>";
+        }
+
+        // Generate a random parameter to make the link unique
+        var randomParam = Math.random().toString(36).substring(7);
+        var qrUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdJTprPw9YmNHIXA6UaiyHk91tlVO77kxKd03-18dlVorYDuQ/viewform" + "?param=" + randomParam;
+        generateQRCode(qrUrl);
+        document.getElementById("qrcode").style.border = "solid #000000";
+
+        // Flag to check if the form is submitted
+        var formSubmitted = false;
+
+        // Simulate form submission (replace this with your actual form submission logic)
+        function simulateFormSubmission() {
+            if (!formSubmitted) {
+                // Simulate form submission here
+                // For demonstration purposes, we'll just call disableQRCode after 3 seconds
+                setTimeout(disableQRCode, 3000); // Disable QR code after 3 seconds (replace this with your actual submission logic)
+                formSubmitted = true;
+            }
+        }
+
+        // Simulate form submission after 5 seconds (replace this with your actual form submission trigger)
+        setTimeout(simulateFormSubmission, 9000); // Simulate form submission after 5 seconds
+
+        // Call reloadPage function to reload the page after generating the QR code
+        reloadPage();
+    </script>
+</body>
+</html>
